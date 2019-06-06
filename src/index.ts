@@ -1,4 +1,4 @@
-import {moveSync, rmdirSync, writeFileSync} from "fs-extra"
+import {moveSync, writeFileSync} from "fs-extra"
 import * as meow from "meow"
 import * as ora from "ora"
 import { join, resolve } from "path"
@@ -76,11 +76,6 @@ function createProject(path: string, to: string, defines: string[]) {
 
 function startREPL(path: string, mods: Mod[]) {
   const r = repl.start({ prompt: "> " })
-  r.on("exit", () => {
-    const spinner = ora("Clearing resources...")
-    rmdirSync(path)
-    spinner.succeed()
-  })
   initializeContext()
 
   function initializeContext() {

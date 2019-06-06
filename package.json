@@ -1,5 +1,5 @@
 {
-  "name": "@luin/npm-try",
+  "name": "npm-try-pkg",
   "version": "0.0.2",
   "description": "Quickly try npm packages without writing boilerplate code",
   "main": "index.js",
@@ -7,12 +7,12 @@
     "npm-try": "built/cli.js"
   },
   "scripts": {
-    "prepublishOnly": "npm run build",
+    "prepublishOnly": "npm run build && npm test",
     "start": "tsc && node built/index.js",
     "build": "tsc",
     "mocha": "mocha -r ts-node/register test/**/*.test.ts",
     "test": "npm run lint && npm run mocha",
-    "lint": "tslint src/**/*.ts test/**/*.test.ts --fix"
+    "lint": "tslint src/**/*.ts test/**/*.test.ts"
   },
   "files": [
     "built/",
