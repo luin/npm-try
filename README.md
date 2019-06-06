@@ -2,6 +2,11 @@
 
 🚆 Quickly try npm packages without writing boilerplate code.
 
+[![Build Status](https://travis-ci.org/luin/npm-try.svg?branch=master)](https://travis-ci.org/luin/npm-try)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![npm latest version](https://img.shields.io/npm/v/npm-try/latest.svg)](https://www.npmjs.com/package/npm-try)
+[![Join the chat at https://gitter.im/luin/npm-trys](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/luin/npm-try?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## Install
 
 ```shell
