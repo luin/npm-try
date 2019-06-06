@@ -84,7 +84,6 @@ function startREPL(path: string, mods: Mod[]) {
       try {
         const required = r.context.module.require(mod.packageName)
         if (mod.variableName) {
-          console.log(Object.keys(r.context))
           r.context[mod.variableName] = required
         }
       } catch (err) {
