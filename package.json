@@ -1,6 +1,6 @@
 {
   "name": "npm-try-pkg",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Quickly try npm packages without writing boilerplate code",
   "main": "index.js",
   "bin": {
