@@ -8,23 +8,21 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![npm latest version](https://img.shields.io/npm/v/npm-try-pkg/latest.svg)](https://www.npmjs.com/package/npm-try-pkg)
 
-## Install
-
-```shell
-$ npm install -g npm-try-pkg
-```
-
-## Usage
-
 npm-try provides a REPL interface for you to try NPM packages without writing any boilerplate code.
 
-Simply run `npm-try [packages ..]` anywhere on the shell and npm-try will install the packages and show a REPL interface which has all packages required and assigned to variables.
+Simply run `npm-try [packages ..]` anywhere on the shell and npm-try will show a REPL interface which has all packages installed and assigned to variables.
 
 ## Features
 
 * Super easy to use!
 * npm-try even defines variables for you
 * Top-level `await` support (requires Node.js >= 10)
+
+## Install
+
+```shell
+$ npm install -g npm-try-pkg
+```
 
 ## Examples
 
