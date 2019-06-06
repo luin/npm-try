@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"target": "es2017",
+		"resolveJsonModule": true,
+		"module": "commonjs",
+		"noImplicitAny": true,
+		"removeComments": true,
+		"preserveConstEnums": true,
+		"outDir": "built"
+	},
+	"include": [
+		"./src/**/*.ts"
+	]
+}

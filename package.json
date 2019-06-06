@@ -1,0 +1,51 @@
+{
+  "name": "@luin/npm-try",
+  "version": "0.0.1",
+  "description": "Quickly try npm packages without writing boilerplate code",
+  "main": "index.js",
+  "bin": {
+    "npm-try": "built/cli.js"
+  },
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "start": "tsc && node built/index.js",
+    "build": "tsc",
+    "mocha": "mocha -r ts-node/register test/**/*.test.ts",
+    "test": "npm run lint && npm run mocha",
+    "lint": "tslint src/**/*.ts test/**/*.test.ts --fix"
+  },
+  "files": [
+    "built/",
+    "cli.sh"
+  ],
+  "keywords": [
+    "npm",
+    "try"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/luin/ioredis.git"
+  },
+  "author": "Zihua Li <i@zihua.li>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/fs-extra": "^7.0.0",
+    "@types/meow": "^5.0.0",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.0.5",
+    "@types/ora": "^3.2.0",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "ts-node": "^8.2.0",
+    "tslint": "^5.17.0",
+    "typescript": "^3.5.1"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "fs-extra": "^8.0.1",
+    "lodash.assign": "^4.2.0",
+    "meow": "^5.0.0",
+    "ora": "^3.4.0"
+  }
+}
