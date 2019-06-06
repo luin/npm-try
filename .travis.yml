@@ -9,3 +9,21 @@ node_js:
 
 script:
 - npm test
+
+
+# Trigger a push build on master/release and greenkeeper branches + PRs build on every branches
+# Avoid double build on PRs (See https://github.com/travis-ci/travis-ci/issues/1147)
+branches:
+  only:
+    - master
+    - /^greenkeeper.*$/
+
+deploy:
+  # runs semantic-release on each
+  - provider: script
+    script: npm ci && npx semantic-release
+    skip_cleanup: true
+    on:
+      tags: false
+      all_branches: true
+      node: '10'

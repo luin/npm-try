@@ -1,6 +1,6 @@
 {
   "name": "npm-try-pkg",
-  "version": "0.0.3",
+  "version": "0.0.0-development",
   "description": "Quickly try npm packages without writing boilerplate code",
   "main": "index.js",
   "bin": {
@@ -12,7 +12,8 @@
     "build": "tsc",
     "mocha": "mocha -r ts-node/register test/**/*.test.ts",
     "test": "npm run lint && npm run mocha",
-    "lint": "tslint src/**/*.ts test/**/*.test.ts"
+    "lint": "tslint src/**/*.ts test/**/*.test.ts",
+    "semantic-release": "semantic-release"
   },
   "files": [
     "built/",
@@ -24,7 +25,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/luin/ioredis.git"
+    "url": "https://github.com/luin/ioredis.git"
   },
   "author": "Zihua Li <i@zihua.li>",
   "license": "MIT",
@@ -39,7 +40,8 @@
     "mocha": "^6.1.4",
     "ts-node": "^8.2.0",
     "tslint": "^5.17.0",
-    "typescript": "^3.5.1"
+    "typescript": "^3.5.1",
+    "semantic-release": "^15.13.12"
   },
   "dependencies": {
     "chalk": "^2.4.2",
