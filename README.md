@@ -2,11 +2,11 @@
 
 🚆 Quickly try npm packages without writing boilerplate code.
 
-[![asciicast](https://asciinema.org/a/uvrmZbKgqrFXLZVJUJGv7n8Ew.svg)](https://asciinema.org/a/uvrmZbKgqrFXLZVJUJGv7n8Ew)
+[![asciicast](https://asciinema.org/a/250257.svg)](https://asciinema.org/a/250257)
 
-[![Build Status](https://travis-ci.org/luin/npm-try.svg?branch=master)](https://travis-ci.org/luin/npm-try)
+[![Build Status](https://travis-ci.com/luin/npm-try.svg?branch=master)](https://travis-ci.com/luin/npm-try)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-[![npm latest version](https://img.shields.io/npm/v/npm-try/latest.svg)](https://www.npmjs.com/package/npm-try)
+[![npm latest version](https://img.shields.io/npm/v/npm-try-pkg/latest.svg)](https://www.npmjs.com/package/npm-try-pkg)
 
 ## Install
 
