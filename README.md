@@ -50,7 +50,7 @@ $ npm-try lodash underscore
 A previous version? You can specify versions with `@` symbol (Missing the old days when the `pluck` still exists).:
 
 ```shell
-➜ npm-try lodash@3
+$ npm-try lodash@3
 ✔ const lodash = require('lodash')
 > lodash.pluck
 [Function: pluck]
