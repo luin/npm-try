@@ -1,6 +1,6 @@
 {
   "name": "@luin/npm-try",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Quickly try npm packages without writing boilerplate code",
   "main": "index.js",
   "bin": {
