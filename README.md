@@ -6,7 +6,7 @@
 
 [![Build Status](https://travis-ci.com/luin/npm-try.svg?branch=master)](https://travis-ci.com/luin/npm-try)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-[![npm latest version](https://img.shields.io/npm/v/npm-try-pkg/latest.svg)](https://www.npmjs.com/package/npm-try-pkg)
+[![npm latest version](https://img.shields.io/npm/v/npm-try-cli/latest.svg)](https://www.npmjs.com/package/npm-try-pkg)
 
 npm-try provides a REPL interface for you to try NPM packages without writing any boilerplate code.
 
@@ -21,7 +21,7 @@ Simply run `npm-try [packages ..]` anywhere on the shell and npm-try will show a
 ## Install
 
 ```shell
-$ npm install -g npm-try-pkg
+$ npm install -g npm-try-cli
 ```
 
 ## Examples

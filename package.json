@@ -1,5 +1,5 @@
 {
-  "name": "npm-try-pkg",
+  "name": "npm-try-cli",
   "version": "0.0.0-development",
   "description": "Quickly try npm packages without writing boilerplate code",
   "main": "index.js",
