@@ -17,7 +17,7 @@ function getVariableNameFromPackage(packageName: string): string {
     return packageName
   }
 
-  const dots = packageName.split(/[-\/]/)
+  const dots = packageName.split(/[\/\.]/)
   if (dots.length > 0) {
     packageName = dots[dots.length - 1]
   }
