@@ -2,7 +2,6 @@
 
 import chalk from "chalk"
 import { spawn } from "child_process"
-import { rmdirSync } from "fs-extra"
 import { join } from "path"
 import { supportReplAwait } from "./utils"
 

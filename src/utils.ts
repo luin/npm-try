@@ -22,11 +22,15 @@ export function createProjectDirectory(): Promise<string> {
   })
 }
 
-export function installModule(path: string, packages: string[], verbose: boolean): Promise<void> {
+export function installModule(path: string, packages: string[], flags: {[key: string]: string}): Promise<void> {
   return new Promise((resolve, reject) => {
-    const npm = spawn("npm", ["install"].concat(packages), {
+    const args = ["install"]
+    if (flags.registry) {
+      args.push(`--registry=${flags.registry}`)
+    }
+    const npm = spawn("npm", args.concat(packages), {
       cwd: path,
-      stdio: verbose ? "inherit" : "ignore",
+      stdio: flags.verbose ? "inherit" : "ignore",
     })
 
     npm.on("close", (code) => {

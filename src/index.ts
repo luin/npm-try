@@ -11,8 +11,9 @@ Usage
   $ npm-try [package ..]
 
 Options
-  --verbose, -v Verbose mode. Print debugging messages about their progress.
+  --registry, -r Specify the registry that will be used when npm install.
   --out-dir, -o Create a self-contained project with the packages installed in the directory.
+  --verbose, -v Verbose mode. Print debugging messages about their progress.
 
 Examples
   $ npm-try lodash
@@ -21,14 +22,18 @@ Examples
   $ npm-try lodash -o my-lodash
   `, {
   flags: {
-    verbose: {
-      default: false,
-      type: "boolean",
-      alias: "v",
+    registry: {
+      type: "string",
+      alias: "r",
     },
     outDir: {
       type: "string",
       alias: "o",
+    },
+    verbose: {
+      default: false,
+      type: "boolean",
+      alias: "v",
     },
   },
   })
@@ -40,7 +45,7 @@ async function run() {
   for (const mod of mods) {
     const spinner = ora(`Installing ${mod.target}...`).start()
     try {
-      await installModule(path, [mod.target], cli.flags.verbose)
+      await installModule(path, [mod.target], cli.flags)
       const succeed = `const ${mod.variableName} = require('${mod.packageName}')`
       if (cli.flags.outDir) {
         spinner.succeed()
