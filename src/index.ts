@@ -42,6 +42,7 @@ async function run() {
   const mods = cli.input.map((target) => new Mod(target))
   const path = await createProjectDirectory()
   const defines: string[] = []
+  let installed = 0
   for (const mod of mods) {
     const spinner = ora(`Installing ${mod.target}...`).start()
     try {
@@ -53,9 +54,15 @@ async function run() {
         spinner.succeed(succeed)
       }
       defines.push(succeed)
+      installed += 1
     } catch (err) {
       spinner.fail(`Install ${mod.target} failed. Does package "${mod.packageName}" exist?`)
     }
+  }
+
+  const success = installed > 0 || mods.length === 0
+  if (!success) {
+    process.exit(1)
   }
 
   if (cli.flags.outDir) {
