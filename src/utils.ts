@@ -28,7 +28,7 @@ export function installModule(path: string, packages: string[], flags: {[key: st
     if (flags.registry) {
       args.push(`--registry=${flags.registry}`)
     }
-    const npm = spawn("npm", args.concat(packages), {
+    const npm = spawn(process.platform === "win32" ? "npm.cmd" : "npm", args.concat(packages), {
       cwd: path,
       stdio: flags.verbose ? "inherit" : "ignore",
     })
