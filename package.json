@@ -44,7 +44,7 @@
     "semantic-release": "^15.13.12"
   },
   "dependencies": {
-    "chalk": "^2.4.2",
+    "chalk": "^3.0.0",
     "fs-extra": "^8.0.1",
     "lodash.assign": "^4.2.0",
     "meow": "^5.0.0",
