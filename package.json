@@ -31,7 +31,7 @@
   "license": "MIT",
   "devDependencies": {
     "@types/chai": "4.1.7",
-    "@types/fs-extra": "7.0.0",
+    "@types/fs-extra": "8.1.0",
     "@types/meow": "5.0.0",
     "@types/mocha": "5.2.7",
     "@types/node": "12.0.5",
