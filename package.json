@@ -12,7 +12,7 @@
     "build": "tsc",
     "mocha": "mocha -r ts-node/register test/**/*.test.ts",
     "test": "npm run lint && npm run mocha",
-    "lint": "tslint src/**/*.ts test/**/*.test.ts",
+    "lint": "tslint --fix src/**/*.ts test/**/*.test.ts",
     "semantic-release": "semantic-release"
   },
   "files": [
