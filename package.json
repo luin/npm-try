@@ -41,7 +41,7 @@
     "ts-node": "8.2.0",
     "tslint": "5.17.0",
     "typescript": "3.5.1",
-    "semantic-release": "15.13.12"
+    "semantic-release": "17.3.1"
   },
   "dependencies": {
     "chalk": "^3.0.0",
