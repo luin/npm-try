@@ -30,7 +30,7 @@
   "author": "Zihua Li <i@zihua.li>",
   "license": "MIT",
   "devDependencies": {
-    "@types/chai": "4.1.7",
+    "@types/chai": "5.2.3",
     "@types/fs-extra": "7.0.0",
     "@types/meow": "5.0.0",
     "@types/mocha": "5.2.7",
